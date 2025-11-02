@@ -51,7 +51,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     await signInWithEmailAndPassword(auth, email, password);
   };
   const signup = async (email: string, password: string) => {
-    await createUserWithEmailAndPassword(auth, email, password);
+    console.warn('Sign-up is disabled in this build.');
+    throw new Error('Sign-ups are temporarily disabled.');
   };
   const logout = async () => {
     await signOut(auth);
