@@ -1,7 +1,7 @@
 {
   "expo": {
-  "name": "Motion Tracker",
-  "slug": "motion-tracker",
+    "name": "Motion Tracker",
+    "slug": "fitness-tracker",
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
@@ -18,10 +18,10 @@
         "backgroundColor": "#121212"
       }
     },
-  "scheme": "motiontracker",
-  "extra": {
+    "scheme": "motiontracker",
+    "extra": {
       "eas": {
-        "projectId": "REPLACE_ME"
+        "projectId": "2f4948fc-735c-4e6b-ad5b-e260a8b9ddc5"
       },
       "firebase": {
         "apiKey": "AIzaSyBllYSXT_udpMlKZaQP3C22GBuPRbMHZBQ",
@@ -36,9 +36,10 @@
         "androidClientId": "YOUR_GOOGLE_ANDROID_CLIENT_ID",
         "iosClientId": "YOUR_GOOGLE_IOS_CLIENT_ID"
       },
-  "openaiApiKey": "YOUR_OPENAI_API_KEY",
-  "geminiApiKey": "AIzaSyBHcCGshGx1QmSBAdSwuqWGM6bv0kFr3E8",
-  "geminiModel": "gemini-2.5-flash"
-    }
+      "openaiApiKey": "YOUR_OPENAI_API_KEY",
+      "geminiApiKey": "AIzaSyBHcCGshGx1QmSBAdSwuqWGM6bv0kFr3E8",
+      "geminiModel": "gemini-2.5-flash"
+    },
+    "owner": "kabir704"
   }
 }
