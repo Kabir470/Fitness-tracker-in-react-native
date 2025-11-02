@@ -1,4 +1,4 @@
-# StepFit
+# Motion Tracker
 
 A clean, modern step counter and fitness tracker built with Expo (React Native) and React Native Paper.
 

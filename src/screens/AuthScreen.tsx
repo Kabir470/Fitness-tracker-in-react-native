@@ -46,7 +46,7 @@ export default function AuthScreen() {
       <AnimatedGradient colors={["#F6F9FC", "#FFFFFF"]} style={StyleSheet.absoluteFillObject} />
       <View style={[styles.container, { paddingBottom: insets.bottom + 16 }]}> 
       <Animated.View entering={FadeIn.duration(600)} style={{ alignItems: 'center', marginBottom: 16 }}>
-        <Text variant="headlineMedium" style={{ fontWeight: '700' }}>FitTrack AI</Text>
+        <Text variant="headlineMedium" style={{ fontWeight: '700' }}>Motion Tracker</Text>
         <Animated.Text
           entering={FadeIn.delay(150).duration(500)}
           style={{ opacity: 0.7, marginTop: 6 }}

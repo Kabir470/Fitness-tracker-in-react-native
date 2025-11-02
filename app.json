@@ -1,7 +1,7 @@
 {
   "expo": {
-  "name": "FitTrack AI",
-  "slug": "fittrack-ai",
+  "name": "Motion Tracker",
+  "slug": "motion-tracker",
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
@@ -18,7 +18,7 @@
         "backgroundColor": "#121212"
       }
     },
-  "scheme": "fittrackai",
+  "scheme": "motiontracker",
   "extra": {
       "eas": {
         "projectId": "REPLACE_ME"
