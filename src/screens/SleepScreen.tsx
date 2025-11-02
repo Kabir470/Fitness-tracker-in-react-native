@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Card, Button } from 'react-native-paper';
+import { LinearGradient } from 'expo-linear-gradient';
+import Screen from '../components/Screen';
 import { collection, addDoc, serverTimestamp, query, orderBy, onSnapshot } from 'firebase/firestore';
-import { db } from '@/lib/firebase';
-import { useAuth } from '@/context/AuthContext';
+import { db } from '../lib/firebase';
+import { useAuth } from '../context/AuthContext';
 
 type Sleep = { id: string; start: any; end?: any; durationMin?: number };
 
@@ -38,13 +40,18 @@ export default function SleepScreen() {
   };
 
   return (
-    <View style={styles.container}>
+    <Screen>
+    <LinearGradient colors={["#2a1b5a", "#0d1b2a"]} style={styles.container}>
       <Card style={styles.card}>
         <Card.Content>
           <Text variant="titleLarge">Sleep tracker</Text>
-          <Button mode={running ? 'contained' : 'outlined'} style={{ marginTop: 8 }} onPress={running ? stop : start}>
-            {running ? 'Stop Sleep' : 'Start Sleep'}
-          </Button>
+          <View style={styles.glowWrap}>
+            <LinearGradient colors={["#6a11cb", "#2575fc"]} start={{x:0,y:0}} end={{x:1,y:1}} style={styles.glowBtn}>
+              <Button textColor="#fff" style={{ backgroundColor: 'transparent' }} onPress={running ? stop : start}>
+                {running ? 'Stop Sleep' : 'Start Sleep'}
+              </Button>
+            </LinearGradient>
+          </View>
         </Card.Content>
       </Card>
       <Card style={[styles.card, { marginTop: 12 }]}>
@@ -56,11 +63,14 @@ export default function SleepScreen() {
           {items.length === 0 ? <Text style={{ opacity: 0.6 }}>No sleep logs yet.</Text> : null}
         </Card.Content>
       </Card>
-    </View>
+    </LinearGradient>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16 },
-  card: { borderRadius: 16 }
+  card: { borderRadius: 20 },
+  glowWrap: { alignItems: 'center', marginTop: 12 },
+  glowBtn: { borderRadius: 28, width: 220, shadowColor: '#6a11cb', shadowOpacity: 0.6, shadowRadius: 16, shadowOffset: { width: 0, height: 8 }, elevation: 6 }
 });

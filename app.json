@@ -18,24 +18,27 @@
         "backgroundColor": "#121212"
       }
     },
-    "extra": {
+  "scheme": "fittrackai",
+  "extra": {
       "eas": {
         "projectId": "REPLACE_ME"
       },
       "firebase": {
-        "apiKey": "YOUR_FIREBASE_API_KEY",
-        "authDomain": "YOUR_PROJECT.firebaseapp.com",
-        "projectId": "YOUR_PROJECT_ID",
-        "storageBucket": "YOUR_PROJECT.appspot.com",
-        "messagingSenderId": "YOUR_SENDER_ID",
-        "appId": "YOUR_APP_ID"
+        "apiKey": "AIzaSyBllYSXT_udpMlKZaQP3C22GBuPRbMHZBQ",
+        "authDomain": "fitness-tracker-3aadf.firebaseapp.com",
+        "projectId": "fitness-tracker-3aadf",
+        "storageBucket": "fitness-tracker-3aadf.firebasestorage.app",
+        "messagingSenderId": "553794790729",
+        "appId": "1:553794790729:web:9098df416f96a4cdf92698"
       },
       "google": {
         "expoClientId": "YOUR_GOOGLE_EXPO_CLIENT_ID",
         "androidClientId": "YOUR_GOOGLE_ANDROID_CLIENT_ID",
         "iosClientId": "YOUR_GOOGLE_IOS_CLIENT_ID"
       },
-      "openaiApiKey": "YOUR_OPENAI_API_KEY"
+  "openaiApiKey": "YOUR_OPENAI_API_KEY",
+  "geminiApiKey": "AIzaSyBHcCGshGx1QmSBAdSwuqWGM6bv0kFr3E8",
+  "geminiModel": "gemini-2.5-flash"
     }
   }
 }

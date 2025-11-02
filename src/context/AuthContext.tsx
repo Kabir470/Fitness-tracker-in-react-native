@@ -3,7 +3,7 @@ import { onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWith
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import Constants from 'expo-constants';
-import { auth } from '@/lib/firebase';
+import { auth } from '../lib/firebase';
 
 WebBrowser.maybeCompleteAuthSession();
 

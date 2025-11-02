@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { Pedometer } from 'expo-sensors';
-import { loadCurrent, saveCurrent, loadHistory, saveHistory, toEntry, todayStr } from '@/storage/history';
-import { useAuth } from '@/context/AuthContext';
-import { syncSteps } from '@/storage/stepSync';
+import { loadCurrent, saveCurrent, loadHistory, saveHistory, toEntry, todayStr } from '../storage/history';
+import { useAuth } from '../context/AuthContext';
+import { syncSteps } from '../storage/stepSync';
 
 type StepContextValue = {
   isPedometerAvailable: boolean | null;
