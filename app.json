@@ -1,0 +1,41 @@
+{
+  "expo": {
+  "name": "FitTrack AI",
+  "slug": "fittrack-ai",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#121212",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.stepfit.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#121212"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_ME"
+      },
+      "firebase": {
+        "apiKey": "YOUR_FIREBASE_API_KEY",
+        "authDomain": "YOUR_PROJECT.firebaseapp.com",
+        "projectId": "YOUR_PROJECT_ID",
+        "storageBucket": "YOUR_PROJECT.appspot.com",
+        "messagingSenderId": "YOUR_SENDER_ID",
+        "appId": "YOUR_APP_ID"
+      },
+      "google": {
+        "expoClientId": "YOUR_GOOGLE_EXPO_CLIENT_ID",
+        "androidClientId": "YOUR_GOOGLE_ANDROID_CLIENT_ID",
+        "iosClientId": "YOUR_GOOGLE_IOS_CLIENT_ID"
+      },
+      "openaiApiKey": "YOUR_OPENAI_API_KEY"
+    }
+  }
+}
