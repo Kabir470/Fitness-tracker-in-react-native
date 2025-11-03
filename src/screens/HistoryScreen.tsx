@@ -45,7 +45,7 @@ export default function HistoryScreen() {
           <View style={{ alignSelf: 'center', marginTop: 12 }}>
             <Svg width={size} height={size}>
               <Circle cx={size/2} cy={size/2} r={r} stroke={'rgba(0,0,0,0.08)'} strokeWidth={strokeWidth} fill="none" />
-              <AnimatedCircle cx={size/2} cy={size/2} r={r} stroke={'#2EE58F'} strokeWidth={strokeWidth} strokeLinecap="round" fill="none" strokeDasharray={`${c} ${c}`} animatedProps={animatedProps} rotation={-90} originX={size/2} originY={size/2} />
+              <AnimatedCircle cx={size/2} cy={size/2} r={r} stroke={'#6366F1'} strokeWidth={strokeWidth} strokeLinecap="round" fill="none" strokeDasharray={`${c} ${c}`} animatedProps={animatedProps} rotation={-90} originX={size/2} originY={size/2} />
             </Svg>
             <Text variant="titleLarge" style={{ position: 'absolute', alignSelf: 'center', top: size/2 - 12 }}>{avg.toLocaleString()} avg</Text>
           </View>
@@ -61,7 +61,7 @@ export default function HistoryScreen() {
                 const h = targetH * p.value;
                 return { y: height - h, height: h } as any;
               });
-              return <AnimatedRect key={d.date} x={x} animatedProps={ap} width={barWidth} fill="#00E676" rx={4} />;
+              return <AnimatedRect key={d.date} x={x} animatedProps={ap} width={barWidth} fill="#6366F1" rx={4} />;
             })}
           </Svg>
           {data.length === 0 ? (

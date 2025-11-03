@@ -16,7 +16,7 @@ export default function RotatingAvatar({ size = 88, uri }: { size?: number; uri?
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
       <Animated.View style={[{ width: ringSize, height: ringSize, borderRadius: ringSize / 2, position: 'absolute' }, ring]}>
-        <LinearGradient colors={["#4DC6FF", "#2EE58F"]} style={{ flex: 1, borderRadius: ringSize / 2 }} />
+        <LinearGradient colors={["#6366F1", "#22D3EE"]} style={{ flex: 1, borderRadius: ringSize / 2 }} />
       </Animated.View>
       <View style={{ width: size + 6, height: size + 6, borderRadius: (size + 6) / 2, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' }}>
         {uri ? (

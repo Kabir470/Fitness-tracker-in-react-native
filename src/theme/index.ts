@@ -1,8 +1,8 @@
 export const palette = {
-  lime: '#2EE58F',
-  sky: '#4DC6FF',
-  bgLight: '#FFFFFF',
-  surfaceLight: '#F6F9FC',
+  primary: '#6366F1', // indigo glow
+  secondary: '#22D3EE', // cyan accent
+  bgLight: '#F2E4FD',
+  surfaceLight: '#FFFFFF',
   textLight: '#101418',
   bgDark: '#0E1116',
   surfaceDark: '#151A22',
@@ -12,16 +12,16 @@ export const palette = {
 
 export const appColors = {
   light: {
-    primary: palette.lime,
-    secondary: palette.sky,
+    primary: palette.primary,
+    secondary: palette.secondary,
     background: palette.bgLight,
     surface: palette.surfaceLight,
     text: palette.textLight,
     error: palette.error
   },
   dark: {
-    primary: palette.lime,
-    secondary: palette.sky,
+    primary: palette.primary,
+    secondary: palette.secondary,
     background: palette.bgDark,
     surface: palette.surfaceDark,
     text: palette.textDark,

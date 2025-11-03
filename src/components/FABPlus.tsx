@@ -15,7 +15,7 @@ export default function FABPlus({ onPress }: { onPress?: () => void }) {
         onPress={onPress}
         style={{ borderRadius: 32, overflow: 'hidden' }}
       >
-        <LinearGradient colors={["#4DC6FF", "#2EE58F"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ width: 64, height: 64, alignItems: 'center', justifyContent: 'center' }}>
+  <LinearGradient colors={["#6366F1", "#22D3EE"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ width: 64, height: 64, alignItems: 'center', justifyContent: 'center' }}>
           <MaterialCommunityIcons name="plus" size={28} color="#fff" />
         </LinearGradient>
       </Pressable>

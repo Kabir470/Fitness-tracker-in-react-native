@@ -13,7 +13,7 @@ type Props = {
   tintColor?: string;
 };
 
-export default function ProgressRing({ size, strokeWidth = 14, progress, trackColor = 'rgba(0,0,0,0.08)', tintColor = '#00E676' }: Props) {
+export default function ProgressRing({ size, strokeWidth = 14, progress, trackColor = 'rgba(0,0,0,0.08)', tintColor = '#6366F1' }: Props) {
   const radius = (size - strokeWidth) / 2;
   const c = 2 * Math.PI * radius;
   const p = useSharedValue(0);

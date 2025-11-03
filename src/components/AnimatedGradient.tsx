@@ -7,7 +7,7 @@ const AnimatedLG = Animated.createAnimatedComponent(LinearGradient as any);
 
 export default function AnimatedGradient({
   style,
-  colors = ['#F6F9FC', '#FFFFFF'],
+  colors = ['#7DFAFE', '#E5FBFF'],
   duration = 6000,
 }: { style?: StyleProp<ViewStyle>; colors?: string[]; duration?: number }) {
   const x = useSharedValue(0);

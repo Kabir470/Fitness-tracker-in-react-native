@@ -44,7 +44,7 @@ export default function WorkoutScreen() {
   const renderItem = ({ item }: { item: Workout }) => (
     <Card style={[styles.gridCard, styles.shadow]}>
       <Card.Content style={{ alignItems: 'center' }}>
-        <MaterialCommunityIcons name="dumbbell" size={28} color="#2EE58F" />
+  <MaterialCommunityIcons name="dumbbell" size={28} color="#6366F1" />
         <Text variant="titleMedium" style={{ marginTop: 6 }}>{item.type}</Text>
         <Text style={{ opacity: 0.7 }}>{item.durationMin} min</Text>
       </Card.Content>

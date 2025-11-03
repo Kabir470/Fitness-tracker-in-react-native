@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import Animated, { useSharedValue, withTiming, useAnimatedStyle } from 'react-native-reanimated';
 
-export default function AnimatedBar({ progress, height = 8, color = '#2EE58F' }: { progress: number; height?: number; color?: string }) {
+export default function AnimatedBar({ progress, height = 8, color = '#6366F1' }: { progress: number; height?: number; color?: string }) {
   const p = useSharedValue(0);
   React.useEffect(() => {
     p.value = withTiming(Math.max(0, Math.min(1, progress)), { duration: 800 });

@@ -43,7 +43,7 @@ export default function AuthScreen() {
 
   return (
     <Screen edges={['top','bottom']}>
-      <AnimatedGradient colors={["#F6F9FC", "#FFFFFF"]} style={StyleSheet.absoluteFillObject} />
+  <AnimatedGradient colors={["#BEFDFE", "#FFFFFF"]} style={StyleSheet.absoluteFillObject} />
       <View style={[styles.container, { paddingBottom: insets.bottom + 16 }]}> 
       <Animated.View entering={FadeIn.duration(600)} style={{ alignItems: 'center', marginBottom: 16 }}>
         <Text variant="headlineMedium" style={{ fontWeight: '700' }}>Motion Tracker</Text>

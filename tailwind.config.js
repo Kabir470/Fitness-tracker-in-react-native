@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2EE58F',
-        secondary: '#4DC6FF',
-        bg: '#FFFFFF',
-        surface: '#F6F9FC',
+        primary: '#6366F1',
+        secondary: '#22D3EE',
+  bg: '#F2E4FD',
+  surface: '#FFFFFF',
         text: '#101418',
       },
       borderRadius: {

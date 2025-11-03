@@ -128,7 +128,7 @@ export default function AIScreen() {
             style={{ marginTop: 8 }}
             multiline
           />
-          <LinearGradient colors={["#4DC6FF", "#2EE58F"]} start={{x:0,y:0}} end={{x:1,y:1}} style={{ borderRadius: 24, marginTop: 8 }}>
+          <LinearGradient colors={["#6366F1", "#22D3EE"]} start={{x:0,y:0}} end={{x:1,y:1}} style={{ borderRadius: 24, marginTop: 8 }}>
             <Button contentStyle={{ height: 48 }} textColor="#fff" style={{ backgroundColor: 'transparent' }} onPress={ask} loading={loading} disabled={loading}>
               Ask
             </Button>
